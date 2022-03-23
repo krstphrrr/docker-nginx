@@ -1,5 +1,5 @@
 ## Build step
-1. While docker is running, run this command in the directory created when cloning this repository: 
+While docker is running, run this command in the directory created when cloning this repository: 
 
 ```
 docker build -t nginx-example-image .
@@ -7,7 +7,7 @@ docker build -t nginx-example-image .
 With this command, an image is built to the specifications in the Dockerfile and 'tagged' (the -t flag) as nginx-example-image. The last dot just specifies where to look for the image.
 
 ## Run step
-2. After the image is built, run the container with this command: 
+After the image is built, run the container with this command: 
 
 ```
 docker run -d --rm -p 8080:80 --name nginx-container nginx-example-image
