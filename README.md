@@ -14,6 +14,7 @@ docker run -d --rm -p 8080:80 --name nginx-container nginx-example-image
 ```
 
 Here, docker spins up a container with the image previously created. Breakdown of the command: 
+
 `-d` means run the container in detached mode, so all the log information is not displayed in the command line application used to run docker. 
 
 `--rm` means to auto-remove the docker container if stopped using the docker stop ; otherwise, you would need to stop a docker container and then remove it.
@@ -22,7 +23,7 @@ Here, docker spins up a container with the image previously created. Breakdown o
 
 `--name` optional human-readable name to manage the container; if not set, docker will automatically name the container. in this example we call the container 'nginx-container'
 
-at the end of the docker run command, we specify which docker image to use to run within the container. 
+at the end of the docker run command, we specify which docker image to use to run within the container (the previously made nginx-example-image). 
 
 
 ## Viewing the page served 
