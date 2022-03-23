@@ -14,13 +14,13 @@ docker run -d --rm -p 8080:80 --name nginx-container nginx-example-image
 ```
 
 Here, docker spins up a container with the image previously created. Breakdown of the command: 
--d means run the container in detached mode, so all the log information is not displayed in the command line application used to run docker. 
+`-d` means run the container in detached mode, so all the log information is not displayed in the command line application used to run docker. 
 
---rm means to auto-remove the docker container if stopped using the docker stop ; otherwise, you would need to stop a docker container and then remove it.
+`--rm` means to auto-remove the docker container if stopped using the docker stop ; otherwise, you would need to stop a docker container and then remove it.
 
--p means published port. the first number specifies which port is accessible from outside the container, while the second number maps it to an exposed port (see the dockerfile)
+`-p` means published port. the first number specifies which port is accessible from outside the container, while the second number maps it to an exposed port (see the dockerfile)
 
---name optional human-readable name to manage the container; if not set, docker will automatically name the container. in this example we call the container 'nginx-container'
+`--name` optional human-readable name to manage the container; if not set, docker will automatically name the container. in this example we call the container 'nginx-container'
 
 at the end of the docker run command, we specify which docker image to use to run within the container. 
 
