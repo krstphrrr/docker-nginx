@@ -17,7 +17,7 @@ Here, docker spins up a container with the image previously created. Breakdown o
 
 `-d` means run the container in detached mode, so all the log information is not displayed in the command line application used to run docker. 
 
-`--rm` means to auto-remove the docker container if stopped using the docker stop ; otherwise, you would need to stop a docker container and then remove it.
+`--rm` means to auto-remove the docker container if stopped using the command `docker stop containername` ; otherwise, you would need to stop a docker container and then remove it.
 
 `-p` means published port. the first number specifies which port is accessible from outside the container, while the second number maps it to an exposed port (see the dockerfile)
 
